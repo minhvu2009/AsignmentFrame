@@ -1,0 +1,51 @@
+<style>
+  h1 {
+    text-align: center;
+  }
+</style>
+<div class="container">
+  <h1>Chỉnh sửa sản phẩm</h1>
+  <form #edit="ngForm" (ngSubmit)="onEdit(edit.value)">
+    <div>
+      <label for="" class="form-label">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        name="name"
+        [(ngModel)]="oldProject.name"
+      />
+    </div>
+    <div>
+      <label for="" class="form-label">Description</label>
+      <input
+        type="text"
+        class="form-control"
+        name="description"
+        [(ngModel)]="oldProject.description"
+      />
+    </div>
+    <div>
+      <label for="" class="form-label">Price</label>
+      <input
+        type="number"
+        class="form-control"
+        name="price"
+        [(ngModel)]="oldProject.price"
+      />
+    </div>
+    <div>
+      <label for="" class="form-label">Image</label>
+      <input
+        type="text"
+        class="form-control"
+        name="image"
+        [(ngModel)]="oldProject.image"
+      />
+    </div>
+    <input
+      type="submit"
+      class="btn btn-primary mt-2 mx-auto d-block w-100"
+      value="Sửa"
+    />
+  </form>
+</div>

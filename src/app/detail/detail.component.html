@@ -1,0 +1,32 @@
+<style>
+  img {
+    width: 600px;
+    height: 400px;
+    margin-left: 80px;
+  }
+  h1 {
+    text-align: center;
+  }
+  .col-4 {
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+</style>
+<div>
+  <div class="row">
+    <h1>Chi tiết sản phẩm</h1>
+    <div class="col-6">
+      <img
+        class="border-2 border-current rounded-md"
+        src="{{ project.image }}"
+        alt=""
+      />
+    </div>
+    <div class="col-4 pt-16">
+      <h1 class="text-2xl font-bold">{{ project.name }}</h1>
+      <p class="text-xl font-bold">Giá: {{ project.price }}</p>
+      <p>{{ project.description }}</p>
+      <button class="btn btn-primary w-100">Mua ngay</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,59 @@
+<style>
+  header {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: black;
+    ul {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100%;
+
+      input {
+        margin-left: 850px;
+        height: 40px;
+        border-radius: 10px;
+      }
+      li {
+        margin-right: 10px;
+        a {
+          padding: 24px;
+          font-size: 20px;
+          font-weight: 700;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  main {
+    margin: 40px auto;
+  }
+  footer {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+  }
+</style>
+<header>
+  <ul>
+    <li><a routerLink="">Home</a></li>
+    <li><a routerLink="/list">List</a></li>
+    <li><a routerLink="/create">Create</a></li>
+    <input type="search" placeholder="Tìm kiếm" />
+    <button class="btn btn-primary">Tìm kiếm</button>
+  </ul>
+</header>
+<main class="main">
+  <router-outlet />
+</main>
+<footer>
+  <p>Minhvhph31650</p>
+</footer>
